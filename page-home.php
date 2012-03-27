@@ -61,28 +61,28 @@ get_header(); ?>
 		<div class="section_body">
 			<ul class="clearfix">
 				<li class="col_3">
-					<a href="" title="The Process">
+					<a href="<?php echo $siteURL; ?>/web-design-process#process_1" title="The Process">
 						<img src="<?php echo $templateDir; ?>/img/fig_process-1.png" alt="" class="process_figure" />
 						<h3>Plan</h3>
 						<p>Work with client to determine goals. Research audience, software, and resources. Document project, roles, copyright, and financial points.</p>
 					</a>
 				</li>
 				<li class="col_3">
-					<a href="" title="The Process">
+					<a href="<?php echo $siteURL; ?>/web-design-process#process_2" title="The Process">
 						<img src="<?php echo $templateDir; ?>/img/fig_process-2.png" alt="" class="process_figure" />
 						<h3>Design</h3>
 						<p>Mock-up project elements and begin review and approval cycle. Prepare pages for development by implementing graphic designs with HTML and CSS.</p>
 					</a>
 				</li>
 				<li class="col_3">
-					<a href="" title="The Process">
+					<a href="<?php echo $siteURL; ?>/web-design-process#process_3" title="The Process">
 						<img src="<?php echo $templateDir; ?>/img/fig_process-3.png" alt="" class="process_figure" />
 						<h3>Develop</h3>
 						<p>Modify pages as templates and load them in to a content management system (CMS). Fill CMS with content. Begin testing, verifying links and functionality.</p>
 					</a>
 				</li>
 				<li class="col_3">
-					<a href="" title="The Process">
+					<a href="<?php echo $siteURL; ?>/web-design-process#process_4" title="The Process">
 						<img src="<?php echo $templateDir; ?>/img/fig_process-4.png" alt="" class="process_figure" />
 						<h3>Launch</h3>
 						<p>Focus upon the finer details in the revision process. Ensure that site is live. Further testing and final checks. Present to client and assist with promotion as required.</p>

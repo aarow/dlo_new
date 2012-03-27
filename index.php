@@ -28,7 +28,7 @@ get_header(); ?>
 					</a>
 					<?php
 						} else { 
-							the_title();
+							//the_title();
 						} 
 					?>
 				</h1>

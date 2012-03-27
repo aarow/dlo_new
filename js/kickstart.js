@@ -28,7 +28,7 @@ $(document).ready(function(){
 		ScrollTo/LocalScroll
 	-----------------------------------*/
 	$.localScroll({
-		filter: ':not(.tabs>li>a)',
+		filter: ':not(.no-scroll)',
 		lazy: true,
 		hash: true
 	});

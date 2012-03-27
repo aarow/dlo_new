@@ -465,19 +465,6 @@ li.instagram {
   color: #0073af;
 }
 .portfolio-list-item {
-  text-align: center;
-}
-.portfolio-list-thumb {
-  position: relative;
-  margin: 50px 0 0 0;
-}
-.portfolio-list-thumb a {
-  color: #FFF;
-}
-.portfolio-list-thumb.no-js {
-  padding: 15px 1px;
-}
-.portfolio-list-thumb.no-js:hover {
   padding: 20px;
   background: #000;
   /* The Fallback */
@@ -485,7 +472,19 @@ li.instagram {
   background: rgba(0, 0, 0, 0.3);
   border: rgba(255, 255, 255, 0.3) solid 1px;
   border-radius: 10px;
-  padding: 14px 0;
+  list-style: none;
+  margin: 0 0 20px 0;
+}
+.portfolio-list-thumb {
+  position: relative;
+  float: left;
+  margin: 0 20px 0 0;
+}
+.portfolio-link-anchor {
+  background: #999;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 50px;
 }
 .overlayCaption {
   padding: 20px;
@@ -515,10 +514,6 @@ li.instagram {
   position: absolute;
   bottom: -16px;
   left: 85px;
-}
-.portfolio-list-item img {
-  display: block;
-  margin: 0 auto;
 }
 strong {
   background: none;
@@ -576,6 +571,9 @@ strong {
   border-right: none;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
+}
+.process_list_item br {
+  display: none;
 }
 .post {
   padding: 20px;

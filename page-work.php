@@ -19,18 +19,24 @@ get_header(); ?>
 <div class="content_wrapper index">
 
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-		<ul class="product_list shadow-box-container">
+		<ul class="portfolio_list shadow-box-container">
 			<?php
 				$args = array( 'post_type' => 'portfolio-item' );
 				$postslist = get_posts( $args );
 				foreach ($postslist as $post) :  setup_postdata($post); 
 			?> 
-				<li class="portfolio-list-item col_3 clearfix">
+				<li class="portfolio-list-item clearfix">
 					<div class="portfolio-list-thumb no-js">
-						<a href="<?php print_custom_field('image_large'); ?>">
+						<a href="<?php print_custom_field('image_large'); ?>" class="">
 							<?php print_custom_field('image:to_image_tag','thumbnail'); ?>
-							<span><?php the_title(); ?></span>
 						</a>
+					</div>
+						<h3><?php the_title(); ?></h3>
+<div class="portfolio-summary">
+						<?php the_content();?>
+						<div class="portfolio-link">
+							<a href="<?php print_custom_field('link'); ?>" class="portfolio-link-anchor button pop" target="_blank"><?php print_custom_field('link'); ?></a>
+						</div>
 					</div>
 				</li>
 			<?php endforeach; ?>

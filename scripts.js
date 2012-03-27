@@ -24,6 +24,7 @@ $(document).ready(function () {
 	    $(this).find('a').prepend("<span>" + (i+1) + ". </span> ");
 	});
 
+/*
 	//alter portfolio page thumbnail hover
 	var $thumbContainer = $('.portfolio-list-thumb');
 	$thumbContainer.removeClass('no-js');
@@ -52,7 +53,7 @@ $(document).ready(function () {
 				$(this).hide();
 			});
 	});
-
+*/
 
 	// redesign admin link
 	$('.link-admin-anchor').hide();
@@ -163,7 +164,7 @@ $(document).ready(function () {
 
 	$('.instagram-image a').fancybox(fancyboxArgs);
 
-	$('.portfolio-list-item a').fancybox(fancyboxArgs);
+	$('.portfolio-list-thumb a').fancybox(fancyboxArgs);
 	
 	$('.post-img-large').fancybox(fancyboxArgs);
 });
